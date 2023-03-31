@@ -6,7 +6,8 @@
     "dev": "open http://localhost:3000 && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint_next": "next lint",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx . && prettier --write '**/*.{html,js,ts,vue,json,md,yaml,yml}'"
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -20,6 +21,7 @@
     "typescript": "5.0.3"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^13.2.4",
     "eslint-config-ivan-big-d": "^1.0.4"
   }
 }
