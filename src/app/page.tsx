@@ -1,10 +1,9 @@
-import { Inter } from "next/font/google";
-import Image from "next/image";
+import "../globals.css";
 
-import styles from "./page.module.css";
+import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
-  return <div>Big dick vercel</div>;
+export default function Home(): JSX.Element {
+  return <div className="text-red-600">Big dick vercel</div>;
 }
