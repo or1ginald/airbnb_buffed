@@ -1,5 +1,9 @@
 import "../globals.css";
-import { Navbar } from "./components/Navbar/Navbar";
+import { ClientRender } from "./components/ClientRender";
+import { LoginModal } from "./components/modals/LoginModal";
+import { RegisterModal } from "./components/modals/RegisterModal";
+import { Navbar } from "./components/navbar/Navbar";
+import { ToasterProvider } from "./providers/ToasterProvider";
 
 export const metadata = {
   title: "Airbnb",
@@ -14,7 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <ClientRender>
+          <ToasterProvider />
+          <RegisterModal />
+          <LoginModal />
+          <Navbar />
+        </ClientRender>
+
         {children}
       </body>
     </html>

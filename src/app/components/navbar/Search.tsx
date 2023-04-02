@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 
-import { BiSearch } from "react-icons/all";
+import { BiSearch } from "react-icons/bi";
 
 interface SearchProps {}
 
